@@ -58,10 +58,8 @@ x = map[2][3]  2 = Column // 3 = Row
 # # 🚨 Don't change the code below 👇
 # print(f"{row1}\n{row2}\n{row3}")
 
-
-
-#ROCK - PAPER - SCISSORS
-
+# #ROCK - PAPER - SCISSORS
+#
 # rock = '''
 #     _______
 # ---'   ____)
@@ -91,6 +89,7 @@ x = map[2][3]  2 = Column // 3 = Row
 #
 # print("Welcome to the Rock, Paper, Scissors Tournament")
 # human = int(input("Make a selection (0, 1 or 2):\n\n0. Rock\n1. Paper\n2. Scissors\n"))
+# while huma
 # computer = random.randint(0, 2)
 # game = [rock,paper,scissors]
 # print(f"{game[human]}")
@@ -106,4 +105,4 @@ x = map[2][3]  2 = Column // 3 = Row
 #     print("You lose")
 # elif human > computer:
 #     print("You Win")
-#
+
