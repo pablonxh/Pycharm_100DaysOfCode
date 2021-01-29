@@ -1,6 +1,87 @@
 #https://docs.python.org/3/tutorial/datastructures.html
 import random
 
+#https://railsware.com/blog/python-for-machine-learning-indexing-and-slicing-for-lists-tuples-strings-and-other-sequential-types/#Negative_indexes
+# >>> basket = ['bread', 'butter', 'milk']
+# >>> basket[0] = 'cake'
+# >>> basket
+# ['cake', 'butter', 'milk']
+#
+# >>> basket = ['bread', 'butter', 'milk']
+# >>> del basket[0]
+# ['butter', 'milk']
+#
+# >>> nums = [10, 20, 30, 40, 50, 60, 70, 80, 90]
+# >>> some_nums = nums[2:7]
+# >>> some_nums
+# [30, 40, 50, 60, 70]
+#
+# >>> nums = [10, 20, 30, 40, 50, 60, 70, 80, 90]
+# >>> nums[:5]
+# [10, 20, 30, 40, 50]
+#
+# >>> nums = [10, 20, 30, 40, 50, 60, 70, 80, 90]
+# >>> nums[-3:]
+# [70, 80, 90]
+#
+# >>> nums = [10, 20, 30, 40, 50, 60, 70, 80, 90]
+# >>> nums[1:-1]
+# [20, 30, 40, 50, 60, 70, 80]
+# >>> nums[-3:8]
+# [70, 80]
+# >>> nums[-5:-1]
+# [50, 60, 70, 80]
+#
+# >>> nums = [10, 20, 30, 40, 50, 60, 70, 80, 90]
+# >>> nums[:-2]
+# [10, 20, 30, 40, 50, 60, 70]
+#
+# #STEPS
+# >>> nums = [10, 20, 30, 40, 50, 60, 70, 80, 90]
+# >>> nums[:-2]
+# [10, 20, 30, 40, 50, 60, 70]
+#
+# #Negative Steps
+# >>> nums = [10, 20, 30, 40, 50, 60, 70, 80, 90]
+# >>> nums[::-1]
+# [90, 80, 70, 60, 50, 40, 30, 20, 10]
+#
+# >>> nums = [10, 20, 30, 40, 50, 60, 70, 80, 90]
+# >>> nums[-2::-1]
+# [80, 70, 60, 50, 40, 30, 20, 10]
+#
+# >>> nums = [10, 20, 30, 40, 50, 60, 70, 80, 90]
+# >>> nums[-2:1:-1]
+# [80, 70, 60, 50, 40, 30]
+#
+# >>> nums = [10, 20, 30, 40, 50, 60, 70, 80, 90]
+# >>> nums[-2:1:-3]
+# [80, 50]
+#
+# >>> nums = [10, 20, 30, 40, 50, 60, 70, 80, 90]
+# >>> first_five = nums[0:5]
+# >>> first_five[2] = 3
+# >>> first_five
+# [10, 20, 3, 40, 50]
+# >>> nums
+# [10, 20, 30, 40, 50, 60, 70, 80, 90]
+#
+# #It creates a shallow copy of the whole list and is a good shorthand when you need a copy of the original list.
+#
+# >>> nums = [10, 20, 30, 40, 50, 60, 70, 80, 90]
+# >>> nums_copy = nums[:]
+# >>> nums_copy[0] = 33
+# >>> nums_copy
+# [33, 20, 30, 40, 50, 60, 70, 80, 90]
+# >>> nums
+# [10, 20, 30, 40, 50, 60, 70, 80, 90]
+#
+# >>> nums = [10, 20, 30, 40, 50, 60, 70, 80, 90]
+# >>> nums[:4] = [1,2,3,4]
+# >>> nums
+# [1, 2, 3, 4, 50, 60, 70, 80, 90]
+
+
 '''
 You are going to write a program which will select a random name from a list of names.
 The person selected will have to pay for everybody's food bill.
